@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频展示</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(197, 12, 234, 0);
+            transition: background-color 0.5s ease;
+            background-image: url('image/壁纸.png'); /* 设置背景图片 */
+            background-size: cover; /* 覆盖整个页面 */
+            background-position: center; /* 居中显示 */
+            background-attachment: fixed; /* 固定背景图片，不随滚动条滚动 */
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background-color: #c49410;
+            color: #080601;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ed9303;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #fd2020;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .section {
+            background-color: #f2e3ba;
+            margin: 2px 0;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .section h2 {
+            color: #110801;
+            margin-bottom: 20px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .item img {
+            max-width: 300px;
+            height: auto;
+        }
+        .item-info {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+        .item h3 {
+            margin: 0;
+            color: #151302;
+        }
+        .item p {
+            margin: 5px 0;
+            color: #666666;
+        }
+        footer {
+            background-color: #20232a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 20px;
+            position: ;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 30px 90px;
+            font-size: 16px;
+            color: #43c81e;
+            background-color: #ff8800;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 2px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .video-container {
+            width: 40%;
+            max-width: 500px; /* 你可以根据需要调整视频的最大宽度 */
+            margin: 20px auto;
+            background-color: #000;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>短视频展示</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html" class="btn"><<返回首页</a>
+    </nav>
+    
+    <div class="container">
+        <!-- 装备 -->
+        <div class="section" id="equipment">
+            <p>点击观看此视频，让你对PUBG这款游戏有一个更全面的了解！</p>
+            <div class="video-container">
+               
+                <video controls>
+                   
+                    <source src="image\pubg视频介绍.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </div>
+        
+    </div> 
+    <div class="container">
+        <!-- 装备 -->
+        <div class="section" id="equipment">   
+            <div class="item">
+                <img src="image\04.jpg" alt="背包">
+                <div class="item-info">
+                    <h3>一起来玩PUBG吧！</h3>
+                    <p>这段视频的内容是否让你多这款游戏产生了浓厚的兴趣！在竞技中与其他玩家进行激烈的比拼，无论是险胜还是惨遭淘汰，PUBG依然能够在生活中带给我们快乐！</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <footer>
+        <p> 如果你也对我介绍的这款游戏感兴趣，欢迎联系我！QQ：1620001564</p>
+    </footer>
+    
+    <script>
+        // 动态背景颜色变化
+        setInterval(() => {
+            const colors = ["#f4f4f4", "#e0e0e0", "#d0d0d0"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }, 5000);
+
+        // 鼠标悬停效果
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.addEventListener('mouseover', () => {
+                section.style.transform = 'translateY(-10px)';
+            });
+            section.addEventListener('mouseout', () => {
+                section.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

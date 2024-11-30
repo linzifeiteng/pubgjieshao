@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG游戏介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(244, 244, 200);
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background-color: hsla(263, 91%, 43%, 0.263);
+            color: rgb(26, 14, 16);
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: rgb(208, 161, 22);
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: hsla(263, 25%, 46%, 0);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: rgb(213, 131, 17);
+            text-align: center;
+            padding: 10px 20px;
+            position: ;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            max-width: 30%;
+            height: auto;
+            margin: 10px;
+            transition: transform 0.5s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        h2 {
+            color: #b46161;
+        }
+        .feature-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        /* 按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #ff8800;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        /* 模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 0;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+        .close {
+            color: #aaa;
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>游戏介绍</h1>
+    </header>
+    
+    <nav>
+        
+        <a href="index.html" class="btn">返回首页</a>
+    </nav>
+    <div class="container" id="overview">
+        <h2>PUBG（绝地求生）是一款由韩国Krafton工作室开发的战术竞技类型手游射击游戏。</h2>
+        <p>由于在玩家胜利后，会在屏幕上出现“大吉大利，今晚吃鸡”这几个字，因此它被广大玩家亲切地称呼为“吃鸡”。</p>
+        <div class="gallery">
+            <img src="image\20.jpg" alt="PUBG Image 1" class="feature-image">
+            
+            <img src="image\24.jpg" alt="PUBG Image 1" class="feature-image">
+            <img src="image\25.jpg" alt="PUBG Image 2" class="feature-image">
+        </div>
+        <p>PUBG是一款令无数玩家着迷的战术竞技型射击游戏。它以100名玩家空投至荒岛的设定，展开了一场紧张刺激的生存竞赛。玩家们需要搜寻装备、制定策略，并在不断缩小的安全区内与其他玩家斗智斗勇，直至最后一人或一队存活。PUBG的魅力在于其高度的自由度和不可预测性，每一局都是全新的体验。无论是潜行狙击、正面交锋还是团队协作，玩家都能在这里找到乐趣。胜利后的“大吉大利，今晚吃鸡”更是成为了游戏文化的一部分，让每一次生存挑战都充满了期待和兴奋。</p>
+    </div>
+    
+    <div class="container" id="features">
+        <h2>游戏特色</h2>
+        <ul>
+            <li>大规模玩家基数：PUBG支持每局游戏最多100名玩家同时参与，这意味着每场战斗都是一个大型社交活动，玩家可以单独或组队参与，体验与众多对手竞争的紧张刺激。</li>
+            <p></p>
+            <li>广阔的开放世界：游戏提供多个大型开放地图，每个地图都有独特的地形和环境，从城市建筑到荒野山地，玩家可以在这些丰富的场景中寻找资源，制定战术，享受探索的乐趣。</li>
+            <p></p>
+            <li>丰富的武器和装备：PUBG中有各式各样的武器和装备供玩家选择，包括各种枪械、防具、药品等，玩家可以根据个人喜好和战术需求，自由组合装备，增加游戏的策略性。</li>
+            <p></p>
+            <li>战术多样性：游戏中，玩家可以根据自己的风格选择不同的战术，无论是喜欢潜行、狙击还是正面硬刚，每种玩法都有其独特的挑战和乐趣，使得每场比赛都充满变数。</li>
+            <p></p>
+            <li>动态环境：PUBG的安全区机制使得游戏环境不断变化，玩家需要不断移动以避免毒圈的伤害，这种动态环境增加了游戏的紧张感，也迫使玩家不断做出决策。</li>
+            <p></p>
+            <li>真实物理引擎：游戏采用先进的物理引擎，模拟真实的弹道、射击反馈和载具物理，使得游戏操作更加逼真，提升了游戏的沉浸感。</li>
+            <p></p>
+            <li>载具系统：PUBG中的载具系统让玩家可以驾驶汽车、摩托车等多种交通工具，这不仅增加了移动的速度和灵活性，也为战术撤退和快速转移提供了可能。</li>
+            <p></p>
+            <li>声音系统：游戏中的声音系统非常关键，玩家可以通过脚步声、枪声来判断敌人的位置，这种高度仿真的声音系统为游戏增添了更多的真实感和紧张气氛。</li>
+            <p></p>
+            <li>视觉和声音提示：当玩家受到伤害或附近有敌人活动时，游戏会提供视觉和声音提示，帮助玩家快速反应，这种直观的反馈机制增强了游戏的互动性和沉浸感。</li>
+            <p></p>
+            <li>社交互动：PUBG支持多人组队，玩家可以与朋友一起组队参与游戏，这种社交互动不仅增加了游戏的乐趣，也使得团队合作成为取胜的关键因素。</li>
+        </ul>
+    </div>
+    
+    <div class="container" id="gallery">
+        <h2>游戏图库</h2>
+      
+        <div class="gallery">
+            <img src="image\42.png" alt="PUBG Image 1" class="feature-image">
+            <img src="image\动图86.gif" alt="PUBG Image 2" class="feature-image">
+            <img src="image\16.png" alt="PUBG Image 3" class="feature-image">
+            <img src="image\19.jpg" alt="PUBG Image 4" class="feature-image">
+            <img src="image\18.jpg" alt="PUBG Image 5" class="feature-image">
+            <img src="image\84动图.gif" alt="PUBG Image 6" class="feature-image">
+            <img src="image\86.jpg" alt="PUBG Image 1" class="feature-image">
+            <img src="image\动图92.gif" alt="PUBG Image 2" class="feature-image">
+            <img src="image\39.jpg" alt="PUBG Image 3" class="feature-image">
+            <img src="image\44.jpg" alt="PUBG Image 4" class="feature-image">
+            <img src="image\45.png" alt="PUBG Image 5" class="feature-image">
+            <img src="image\62.png" alt="PUBG Image 6" class="feature-image">
+        </div>
+        
+    </div>
+    
+    <footer>
+        <p>&copy; 林子腾的个人网页</p>
+    </footer>
+    
+    <!-- 模态框结构 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="Modal Image" id="modal-img">
+        </div>
+    </div>
+    
+    <script>
+        // 动态背景颜色变化
+        setInterval(() => {
+            const colors = ["rgb(207, 165, 14)", "rgb(255, 193, 7)", "rgb(165, 214, 167)"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }, 5000);
+
+        // 鼠标悬停效果
+        const containers = document.querySelectorAll('.container');
+        containers.forEach(container => {
+            container.addEventListener('mouseover', () => {
+                container.style.transform = 'translateY(-10px)';
+            });
+            container.addEventListener('mouseout', () => {
+                container.style.transform = 'translateY(0)';
+            });
+        });
+
+        // 获取模态框和关闭按钮
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("modal-img");
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        // 点击图片时显示模态框
+        var images = document.querySelectorAll('.gallery img');
+        images.forEach(function(img) {
+            img.onclick = function() {
+                modal.style.display = "block";
+                
